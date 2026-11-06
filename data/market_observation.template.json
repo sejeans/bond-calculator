@@ -1,0 +1,11 @@
+{
+  "instrument_name": "국고02250-2806",
+  "settlement": "2025-10-14",
+  "observed_at": "",
+  "price": null,
+  "price_kind": "dirty",
+  "quote_face": 10000,
+  "ytm": null,
+  "source_url": "",
+  "note": "작성 양식입니다. 동일 종목·동일 관측시점 가격/YTM·결제일을 확인하여 원본 case의 market_observation에 넣으세요. 가격 종류는 출처에서 확인해야 합니다."
+}

@@ -1,0 +1,29 @@
+{
+  "source": {
+    "title": "삼성증권 2025-10-21 공시: 계열 금융회사의 약관에 의한 금융거래 [유가증권-채권]",
+    "url": "https://kind.krx.co.kr/external/2025/10/21/000351/20251021000932/80754.htm",
+    "accessed": "2026-09-09",
+    "amount_unit": "억원",
+    "yield_unit": "%"
+  },
+  "bond": {
+    "name": "국고02250-2806(25-4)",
+    "issue": "2025-06-10",
+    "maturity": "2028-06-10",
+    "coupon_rate": 0.0225,
+    "face": 10000,
+    "frequency": 2
+  },
+  "trades": [
+    {"trade_date": "2025-08-25", "counterparty": "삼성자산운용", "side": "매도", "trade_amount_eok": 999.8, "face_amount_eok": 1000, "yield_pct": 2.433},
+    {"trade_date": "2025-09-22", "counterparty": "삼성생명", "side": "매입", "trade_amount_eok": 20.0, "face_amount_eok": 20, "yield_pct": 2.463},
+    {"trade_date": "2025-09-22", "counterparty": "삼성생명", "side": "매입", "trade_amount_eok": 80.1, "face_amount_eok": 80, "yield_pct": 2.463}
+  ],
+  "limitations": [
+    "공시는 거래일자만 제공하므로 거래일 당일과 다음날을 각각 가정하여 계산한다. 실제 결제일 확인값이 아니다.",
+    "거래금액을 총권면금액으로 나눈 값은 반올림된 공시금액에서 유도한 단가이며 정확한 체결단가가 아니다.",
+    "가격 종류가 명시되지 않아 Dirty 가격으로 비교한다는 가정이 있다.",
+    "0.1억원 단위 최근접 반올림을 가정한 ±0.05억원 범위를 참고 표시한다. 공시의 실제 반올림·절사 규칙은 확인하지 못했다.",
+    "관측 유통수익률도 표시 자릿수 제한이 있다. 본 비교는 정밀 시세 일치 검증이나 자동 합격 판정이 아니다."
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "input": {
+    "bond": {
+      "name": "국고02250-2806",
+      "issue": "2025-06-10",
+      "maturity": "2028-06-10",
+      "coupon_rate": 0.0225,
+      "face": 10000,
+      "frequency": 2,
+      "end_of_month": false
+    },
+    "settlement": "2025-10-14",
+    "ytm": 0.02565,
+    "convention": "ktb_simple",
+    "curve": {
+      "tenors": [
+        0.5,
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30
+      ],
+      "rates": [
+        0.02565,
+        0.02565,
+        0.02565,
+        0.02565,
+        0.02565,
+        0.02565,
+        0.02565,
+        0.02565
+      ],
+      "description": "학습용 평탄 제로커브: 낙찰 YTM을 모든 노드에 동일 적용한 가정이며 관측 제로커브가 아님. 복리 할인 사용."
+    },
+    "market_observation": null,
+    "sources": [
+      {
+        "title": "한국은행: 2025-10-13 국고02250-2806 경쟁입찰 결과",
+        "url": "https://www.bok.or.kr/portal/bbs/P0001794/view.do?menuNo=201239&nttId=10093962",
+        "verified_fields": "발행일 2025-06-10, 종목 국고02250-2806, 낙찰금리 2.565%",
+        "accessed": "2026-09-09"
+      },
+      {
+        "title": "국채시장 FAQ",
+        "url": "https://ktb.mofe.go.kr/faq.do",
+        "verified_fields": "종목명의 표면금리·만기 표기 해석",
+        "accessed": "2026-09-09"
+      },
+      {
+        "title": "한국거래소: 국채선물 최종결제기준채권 내역",
+        "url": "https://www.krx.co.kr/contents/OPN/01/01040501/OPN01040501.jsp",
+        "verified_fields": "KR103501GF63, 발행일 2025-06-10, 만기일 2028-06-10, 표면금리 2.250%",
+        "accessed": "2026-09-09"
+      },
+      {
+        "title": "한국은행: 국고02625-2806-1015 발행공고 (일반 국고채 지급 구조 참고)",
+        "url": "https://file-cdn.bok.or.kr/portal/527b5a08dc734bb963c6887e7e50cae3/3/201810041051520250.pdf",
+        "verified_fields": "일반 국고채 매6개월 후급 구조. 예제 종목과는 별도 종목의 참고공고임.",
+        "accessed": "2026-09-09"
+      }
+    ],
+    "notes": [
+      "과거 실제 국고채 조건을 사용한 재현 예제이며 실시간 시세가 아님.",
+      "결제일 2025-10-14는 입찰일 다음날로 둔 분석 가정이며 원 공고에서 확인한 납입일이 아님.",
+      "만기일 2028-06-10은 한국거래소 최종결제기준채권 내역에서도 확인.",
+      "시장가격은 확보하지 못했으므로 null 유지. 이론가격을 시장가격으로 채워 검증하지 않음.",
+      "정규 이표·세전 현금흐름 기준. 선매출·휴일 조정·세금·수수료·원 미만 절사 미반영."
+    ]
+  },
+  "analytics": {
+    "ytm": 0.02565,
+    "convention": "ktb_simple",
+    "dirty_price": 9996.757739880693,
+    "clean_price": 9919.29872348725,
+    "accrued_interest": 77.45901639344262,
+    "macaulay_duration": 2.5730770815275648,
+    "modified_duration": 2.541847629006061,
+    "convexity": 7.805169633968996,
+    "dv01": 2.5410234958863733,
+    "cashflows": [
+      {
+        "payment_date": "2025-12-10",
+        "coupon": 112.5,
+        "principal": 0.0,
+        "amount": 112.5,
+        "years": 0.1557377049180328,
+        "discount_factor": 0.9960212217833108,
+        "present_value": 112.05238745062246,
+        "duration_amount": 17.381348862244362,
+        "convexity_amount": 5.392322201152085,
+        "pv_weight": 0.011208872953238112
+      },
+      {
+        "payment_date": "2026-06-10",
+        "coupon": 112.5,
+        "principal": 0.0,
+        "amount": 112.5,
+        "years": 0.6557377049180328,
+        "discount_factor": 0.983409001341111,
+        "present_value": 110.63351265087499,
+        "duration_amount": 71.77755800625168,
+        "convexity_amount": 76.1927087180942,
+        "pv_weight": 0.011066939454731185
+      },
+      {
+        "payment_date": "2026-12-10",
+        "coupon": 112.5,
+        "principal": 0.0,
+        "amount": 112.5,
+        "years": 1.1557377049180328,
+        "discount_factor": 0.9709564844283178,
+        "present_value": 109.23260449818575,
+        "duration_amount": 124.79338509154547,
+        "convexity_amount": 198.44108687052517,
+        "pv_weight": 0.010926803203644444
+      },
+      {
+        "payment_date": "2027-06-10",
+        "coupon": 112.5,
+        "principal": 0.0,
+        "amount": 112.5,
+        "years": 1.6557377049180328,
+        "discount_factor": 0.95866164878268,
+        "present_value": 107.8494354880515,
+        "duration_amount": 176.45506660634484,
+        "convexity_amount": 370.1489926461827,
+        "pv_weight": 0.010788441442148885
+      },
+      {
+        "payment_date": "2027-12-10",
+        "coupon": 112.5,
+        "principal": 0.0,
+        "amount": 112.5,
+        "years": 2.1557377049180326,
+        "discount_factor": 0.9465224977490484,
+        "present_value": 106.48378099676795,
+        "duration_amount": 226.7883959269655,
+        "convexity_amount": 589.3786079264911,
+        "pv_weight": 0.010651831700588834
+      },
+      {
+        "payment_date": "2028-06-10",
+        "coupon": 112.5,
+        "principal": 10000,
+        "amount": 10112.5,
+        "years": 2.6557377049180326,
+        "discount_factor": 0.9345370599551239,
+        "present_value": 9450.50601879619,
+        "duration_amount": 24793.039204370383,
+        "convexity_amount": 76786.83623109887,
+        "pv_weight": 0.9453571112456485
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "shock_bp": -100,
+      "ytm": 0.015649999999999997,
+      "dirty_price": 10254.808180175532,
+      "change_amount": 258.05044029483906,
+      "change_pct": 2.5813413409568,
+      "duration_price": 10250.860089469332,
+      "convexity_price": 10254.761408966804,
+      "linear_error": -3.9480907062006736,
+      "quadratic_error": -0.04677120872838714
+    },
+    {
+      "shock_bp": -50,
+      "ytm": 0.020649999999999998,
+      "dirty_price": 10124.790061280264,
+      "change_amount": 128.03232139957072,
+      "change_pct": 1.2807384627198104,
+      "duration_price": 10123.808914675012,
+      "convexity_price": 10124.78424454938,
+      "linear_error": -0.9811466052524338,
+      "quadratic_error": -0.005816730883452692
+    },
+    {
+      "shock_bp": -25,
+      "ytm": 0.02315,
+      "dirty_price": 10060.527884996029,
+      "change_amount": 63.770145115335254,
+      "change_pct": 0.6379082776101885,
+      "duration_price": 10060.283327277853,
+      "convexity_price": 10060.527159746445,
+      "linear_error": -0.24455771817520144,
+      "quadratic_error": -0.0007252495834109141
+    },
+    {
+      "shock_bp": -1,
+      "ytm": 0.02555,
+      "dirty_price": 9999.299153554834,
+      "change_amount": 2.5414136741401308,
+      "change_pct": 0.025422379338069234,
+      "duration_price": 9999.298763376579,
+      "convexity_price": 9999.29915350853,
+      "linear_error": -0.0003901782547472976,
+      "quadratic_error": -4.630419425666332e-08
+    },
+    {
+      "shock_bp": 0,
+      "ytm": 0.02565,
+      "dirty_price": 9996.7577398807,
+      "change_amount": 7.275957614183426e-12,
+      "change_pct": 6.661338147750939e-14,
+      "duration_price": 9996.757739880693,
+      "convexity_price": 9996.757739880693,
+      "linear_error": -7.275957614183426e-12,
+      "quadratic_error": -7.275957614183426e-12
+    },
+    {
+      "shock_bp": 1,
+      "ytm": 0.02575,
+      "dirty_price": 9994.217106470469,
+      "change_amount": -2.5406334102244728,
+      "change_pct": -0.025414574168269866,
+      "duration_price": 9994.216716384806,
+      "convexity_price": 9994.217106516757,
+      "linear_error": -0.0003900856627296889,
+      "quadratic_error": 4.628782335203141e-08
+    },
+    {
+      "shock_bp": 25,
+      "ytm": 0.028149999999999998,
+      "dirty_price": 9933.475263361091,
+      "change_amount": -63.282476519601914,
+      "change_pct": -0.6330300099915864,
+      "duration_price": 9933.232152483535,
+      "convexity_price": 9933.475984952127,
+      "linear_error": -0.24311087755631888,
+      "quadratic_error": 0.000721591035471647
+    },
+    {
+      "shock_bp": 50,
+      "ytm": 0.03065,
+      "dirty_price": 9870.676136767737,
+      "change_amount": -126.08160311295615,
+      "change_pct": -1.2612249530662423,
+      "duration_price": 9869.706565086375,
+      "convexity_price": 9870.681894960744,
+      "linear_error": -0.9695716813621402,
+      "quadratic_error": 0.005758193006840884
+    },
+    {
+      "shock_bp": 100,
+      "ytm": 0.03565,
+      "dirty_price": 9746.510875240234,
+      "change_amount": -250.24686464045953,
+      "change_pct": -2.503280274984898,
+      "duration_price": 9742.655390292055,
+      "convexity_price": 9746.556709789527,
+      "linear_error": -3.855484948178855,
+      "quadratic_error": 0.04583454929343134
+    }
+  ],
+  "key_rate_risk": {
+    "curve_dirty_price": 9996.932098721167,
+    "bump_bp": 1.0,
+    "parallel_duration": 2.540495277232665,
+    "krd_sum": 2.5404952454906566,
+    "sum_minus_parallel": -3.174200857714027e-08,
+    "nodes": [
+      {
+        "tenor": 0.5,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.006656898906444558,
+        "key_rate_dv01": 0.006654856635577744,
+        "down_price": 9996.938753827322,
+        "up_price": 9996.925444114051
+      },
+      {
+        "tenor": 1,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.018830163780792854,
+        "key_rate_dv01": 0.01882438687243848,
+        "down_price": 9996.950924096285,
+        "up_price": 9996.91327532254
+      },
+      {
+        "tenor": 2,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.8860153263186364,
+        "key_rate_dv01": 0.8857435055633686,
+        "down_price": 9997.81789093024,
+        "up_price": 9996.046403919114
+      },
+      {
+        "tenor": 3,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 1.6289928564847829,
+        "key_rate_dv01": 1.628493097558021,
+        "down_price": 9998.560757891608,
+        "up_price": 9995.303771696492
+      },
+      {
+        "tenor": 5,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.0,
+        "key_rate_dv01": 0.0,
+        "down_price": 9996.932098721167,
+        "up_price": 9996.932098721167
+      },
+      {
+        "tenor": 10,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.0,
+        "key_rate_dv01": 0.0,
+        "down_price": 9996.932098721167,
+        "up_price": 9996.932098721167
+      },
+      {
+        "tenor": 20,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.0,
+        "key_rate_dv01": 0.0,
+        "down_price": 9996.932098721167,
+        "up_price": 9996.932098721167
+      },
+      {
+        "tenor": 30,
+        "zero_rate": 0.02565,
+        "key_rate_duration": 0.0,
+        "key_rate_dv01": 0.0,
+        "down_price": 9996.932098721167,
+        "up_price": 9996.932098721167
+      }
+    ]
+  },
+  "market_comparison": {
+    "status": "pending",
+    "reason": "독립적인 시장가격·동일 시점 YTM 쌍이 아직 입력되지 않았습니다."
+  }
+}
